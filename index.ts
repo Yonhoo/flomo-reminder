@@ -22,7 +22,7 @@ async function main() {
   const memos = await apiService.getMemos();
   const luckyMemo = memoService.getLuckyMemo(memos);
 
-  console.log("The lucky memo is: \r\n\r\n", luckyMemo, "\r\n");
+
 
   pushService.push(luckyMemo);
 }
